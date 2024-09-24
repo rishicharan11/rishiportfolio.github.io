@@ -5,45 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rishi Charan Gaddam - Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Rishi Charan Gaddam</h1>
-        <p>Tech Enthusiast | Cloud Expert | Data Analyst in the Making</p>
+        <div class="container">
+            <div class="intro-text">
+                <h1>Hi, I'm Rishi Charan Gaddam</h1>
+                <p>Tech Enthusiast | Cloud Specialist | Aspiring Data Analyst</p>
+                <div class="buttons">
+                    <a href="#contact" class="btn">Contact Me</a>
+                    <a href="#projects" class="btn">Projects</a>
+                </div>
+            </div>
+            <div class="intro-img">
+                <img src="your-image.jpg" alt="Rishi Charan Gaddam">
+            </div>
+        </div>
     </header>
 
     <section id="about">
         <h2>About Me</h2>
-        <p>I'm Rishi, a Computer Science student with a passion for technology, cloud computing, and data analytics...</p>
+        <p>
+            I'm a Computer Science student with a passion for technology, cloud computing, and data analytics. Currently pursuing my B.Tech in Computer Science with minors in Mathematics and Psychology, expected to graduate in May 2025. I've had the privilege of mentoring over 500 students as a Tech Intern at ADYANT, along with gaining hands-on experience by leading projects and organizing workshops.
+        </p>
     </section>
 
-    <section id="education">
-        <h2>Education</h2>
-        <p>Bachelor of Technology in Computer Science...</p>
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-list">
+            <div class="skill">Python</div>
+            <div class="skill">HTML/CSS</div>
+            <div class="skill">AWS Cloud</div>
+            <div class="skill">Git</div>
+            <div class="skill">JavaScript</div>
+        </div>
     </section>
 
     <section id="experience">
         <h2>Experience</h2>
-        <p>Tech Intern at ADYANT, Marketing and Promotional Partner at the CSE Department...</p>
-    </section>
-
-    <section id="skills">
-        <h2>Skills & Certifications</h2>
-        <ul>
-            <li>Python, HTML/CSS, AWS, Git</li>
-            <li>Microsoft Azure Fundamentals, AWS Cloud Essentials...</li>
-        </ul>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>Tech Intern at ADYANT (Aug 2023 - Present)</h3>
+                <p>Mentored over 500 students, conducted tech events, workshops, and led multiple projects.</p>
+            </div>
+            <div class="timeline-item">
+                <h3>Marketing & Promotional Partner at CSE Department (Aug 2023 - Present)</h3>
+                <p>Secured sponsorships and organized events, contributing to the success of our department’s initiatives.</p>
+            </div>
+        </div>
     </section>
 
     <section id="projects">
         <h2>Projects</h2>
-        <div class="project-card">
-            <h3>ASL Conversion</h3>
-            <p>Recognized in the top 5 of Computing's Senior Design Projects...</p>
-        </div>
-        <div class="project-card">
-            <h3>Vehicle Number Plate Detection</h3>
-            <p>Using OpenCV for vehicle identification...</p>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>ASL Conversion</h3>
+                <p>Recognized in top 5 of Computing's Senior Design Projects. Developed an American Sign Language conversion system using AI models.</p>
+            </div>
+            <div class="project-card">
+                <h3>Vehicle Number Plate Detection</h3>
+                <p>Utilized OpenCV for real-time vehicle identification through number plate detection. Applied machine learning for accuracy.</p>
+            </div>
         </div>
     </section>
 
