@@ -3,8 +3,8 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #1e1212;
-    color: #a97576;
+    background-color: #000000;
+    color: #AD001E;
 }
 
 h1, h2, h3 {
@@ -12,7 +12,7 @@ h1, h2, h3 {
 }
 
 a {
-    color: #a97576;
+    color: #AD001E;
     text-decoration: none;
 }
 
@@ -28,7 +28,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 50px 20px;
-    background-color: #1e1212;
+    background-color: #050000;
 }
 
 .intro-text {
@@ -92,21 +92,21 @@ section {
 }
 
 .timeline-item {
-    background-color: #7e7884;
+    background-color: #050000;
     padding: 20px;
     margin: 10px 0;
     border-radius: 5px;
 }
 
 #projects {
-    background-color: #7e7884;
+    background-color: #050000;
     display: flex;
     justify-content: center;
     gap: 20px;
 }
 
 .project-card {
-    background-color: #838483;
+    background-color: #000000;
     padding: 20px;
     border-radius: 10px;
     width: 30%;
