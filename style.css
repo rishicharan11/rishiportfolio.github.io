@@ -1,43 +1,120 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
+    padding: 0;
     background-color: #1e1212;
     color: #a97576;
+}
+
+h1, h2, h3 {
+    color: #fff;
+}
+
+a {
+    color: #a97576;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
 }
 
 header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 20px;
     background-color: #1e1212;
-    color: #a97576;
-    text-align: center;
-    padding: 50px 0;
 }
 
-h1 {
-    font-size: 3em;
+.intro-text {
+    max-width: 50%;
+}
+
+.intro-text h1 {
+    font-size: 3rem;
     margin: 0;
 }
 
+.intro-text p {
+    margin: 20px 0;
+    font-size: 1.2rem;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: #a97576;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.intro-img img {
+    border-radius: 50%;
+    max-width: 300px;
+}
+
+/* Sections */
 section {
-    padding: 20px;
-    margin: 20px;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#about, #experience, #skills {
     background-color: #838483;
-    border-radius: 8px;
+    color: #fff;
 }
 
-h2 {
-    color: #a97576;
+.skills-list {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 }
 
-.project-card {
+.skill {
     background-color: #7e7884;
-    padding: 15px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.timeline {
+    text-align: left;
+}
+
+.timeline-item {
+    background-color: #7e7884;
+    padding: 20px;
     margin: 10px 0;
     border-radius: 5px;
 }
 
+#projects {
+    background-color: #7e7884;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #838483;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+}
+
 footer {
-    text-align: center;
-    padding: 10px;
+    padding: 20px;
     background-color: #1e1212;
     color: #838483;
+    text-align: center;
 }
