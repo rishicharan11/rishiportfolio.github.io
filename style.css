@@ -1,120 +1,114 @@
-/* General Styles */
+/* Global Styles */
 body {
-    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    font-family: 'Yatra One', sans-serif;
+    color: #f0f0f0;
+    background-color: #1e1212;
+    overflow-x: hidden;
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+#background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(30, 18, 18, 0.8);
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
     margin: 0;
     padding: 0;
-    background-color: #000000;
-    color: #AD001E;
 }
 
-h1, h2, h3 {
-    color: #fff;
+.navbar li {
+    margin: 0 15px;
 }
 
-a {
-    color: #AD001E;
+.navbar a {
+    color: #f0f0f0;
     text-decoration: none;
-}
-
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
-
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 50px 20px;
-    background-color: #050000;
-}
-
-.intro-text {
-    max-width: 50%;
-}
-
-.intro-text h1 {
     font-size: 3rem;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #a97576;
+}
+
+.section {
+    padding: 100px 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.8;
+}
+
+.title {
+    font-family: 'Stalinist One', cursive;
+    font-size: 7rem;
     margin: 0;
+    color: #f0f0f0;
 }
 
-.intro-text p {
-    margin: 20px 0;
-    font-size: 1.2rem;
-}
-
-.buttons {
-    margin-top: 20px;
-}
-
-.btn {
-    background-color: #a97576;
-    padding: 10px 20px;
-    border-radius: 5px;
-    color: #fff;
-    font-weight: bold;
-    margin-right: 10px;
-}
-
-.intro-img img {
-    border-radius: 50%;
-    max-width: 300px;
-}
-
-/* Sections */
-section {
-    padding: 50px 20px;
-    text-align: center;
-}
-
-#about, #experience, #skills {
-    background-color: #838483;
-    color: #fff;
-}
-
-.skills-list {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-.skill {
-    background-color: #7e7884;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-.timeline {
-    text-align: left;
-}
-
-.timeline-item {
-    background-color: #050000;
-    padding: 20px;
-    margin: 10px 0;
-    border-radius: 5px;
-}
-
-#projects {
-    background-color: #050000;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.project-card {
-    background-color: #000000;
-    padding: 20px;
-    border-radius: 10px;
-    width: 30%;
-}
-
-footer {
-    padding: 20px;
-    background-color: #1e1212;
+.subtitle {
+    font-size: 2.5rem;
+    margin: 10px 0 0;
     color: #838483;
-    text-align: center;
+}
+
+/* Section Titles */
+section h2 {
+    font-family: 'Stalinist One', cursive;
+    font-size: 5rem;
+    margin-bottom: 20px;
+    color: #f0f0f0;
+}
+
+/* Hover Animations */
+.section:hover h2 {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar a {
+        font-size: 2rem;
+    }
+
+    .title {
+        font-size: 5rem;
+    }
+
+    .subtitle {
+        font-size: 2.5rem;
+    }
+
+    section h2 {
+        font-size: 3.5rem;
+    }
 }
